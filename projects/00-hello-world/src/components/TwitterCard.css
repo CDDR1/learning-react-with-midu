@@ -1,0 +1,10 @@
+.twitterCard-container {
+  background-color: rgb(62, 62, 62);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.twitterCard-title {
+  font-size: 17px;
+}
