@@ -1,0 +1,28 @@
+.suggestion-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  margin-right: 40px;
+}
+
+.user-nickname {
+  font-size: 90%;
+  color: rgb(140, 140, 140);
+}
+
+.suggestion-button {
+  border: none;
+  outline: none;
+  padding: 6px 13px;
+  border-radius: 30px;
+  cursor: pointer;
+}
