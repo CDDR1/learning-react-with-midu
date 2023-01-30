@@ -1,6 +1,6 @@
 import "./FollowSuggestion.css";
 
-const FollowSuggestion = ({ userAvatar, userName, userNickname, isFollowing }) => {
+const FollowSuggestion = ({ id, userAvatar, userName, userNickname, isFollowing, updateFollow }) => {
   return (
     <div className="suggestion-body">
       <div className="avatar-container">
@@ -10,7 +10,7 @@ const FollowSuggestion = ({ userAvatar, userName, userNickname, isFollowing }) =
         <h3 className="user-name">{userName}</h3>
         <span className="user-nickname">{userNickname}</span>
       </div>
-      <button className="suggestion-button">{isFollowing ? "Unfollow" : "Follow"}</button>
+      <button onClick={() => updateFollow(id)} className="suggestion-button">{isFollowing ? "Unfollow" : "Follow"}</button>
     </div>
   );
 };

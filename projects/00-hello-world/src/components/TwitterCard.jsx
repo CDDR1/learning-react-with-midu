@@ -46,7 +46,7 @@ const TwitterCard = () => {
       <h2 className="twitterCard-title">Who to follow</h2>
       <div className="followSuggestions-container">
         {userSuggestions.map((user) => (
-          <FollowSuggestion key={user.id} id={user.id} userAvatar={user.avatar} userName={user.name} userNickname={user.nickname} isFollowing={user.following} />
+          <FollowSuggestion key={user.id} id={user.id} userAvatar={user.avatar} userName={user.name} userNickname={user.nickname} isFollowing={user.following} updateFollow={toggleFollow} />
         ))}
       </div>
     </div>
