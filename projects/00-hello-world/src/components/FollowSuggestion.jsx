@@ -12,7 +12,7 @@ const FollowSuggestion = ({ id, userAvatar, userName, userNickname, isFollowing,
       </div>
       <div className="button-container">
         <button onClick={() => updateFollow(id)} className="suggestion-button">
-          {isFollowing ? "Unfollow" : "Follow"}
+          {isFollowing ? "Following" : "Follow"}
         </button>
       </div>
     </div>

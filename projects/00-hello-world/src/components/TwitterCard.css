@@ -2,11 +2,12 @@
   background-color: rgb(46, 46, 46);
   color: #fff;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .twitterCard-title {
   font-size: 17px;
-  padding: 15px;
+  padding: 15px 15px 10px;
 }
 
 .followSuggestions-container {
