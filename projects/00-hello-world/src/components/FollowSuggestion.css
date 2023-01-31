@@ -52,3 +52,28 @@
 .suggestion-button:hover {
   opacity: 0.7
 }
+
+.suggestion-button.following {
+  color: #EFEFEF;
+  border: 1.8px solid #EFEFEF;
+  background-color: transparent;
+  transition: 0.3s ease all;
+}
+
+.suggestion-button.following:hover {
+  color: red;
+  border: 1.8px solid red;
+  background-color: rgba(255, 0, 0, 0.149);
+}
+
+.unfollow-text {
+  display: none;
+}
+
+.suggestion-button.following:hover .unfollow-text {
+  display: inline-block;
+}
+
+.suggestion-button.following:hover .button-text {
+  display: none;
+}

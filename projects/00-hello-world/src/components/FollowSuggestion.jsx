@@ -11,8 +11,9 @@ const FollowSuggestion = ({ id, userAvatar, userName, userNickname, isFollowing,
         <span className="user-nickname">{userNickname}</span>
       </div>
       <div className="button-container">
-        <button onClick={() => updateFollow(id)} className="suggestion-button">
-          {isFollowing ? "Following" : "Follow"}
+        <button onClick={() => updateFollow(id)} className={isFollowing ? "suggestion-button following" : "suggestion-button"}>
+          <span className="button-text">{isFollowing ? "Following" : "Follow"}</span>
+          <span className="unfollow-text">Unfollow</span>
         </button>
       </div>
     </div>
